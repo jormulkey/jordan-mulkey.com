@@ -1,11 +1,11 @@
-<!-- START OF FILE blaze-forward.html -->
+<!-- START OF FILE campus-tours.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Case Study: Blaze Forward Scenarios | Jordan Mulkey</title>
+  <title>Case Study: Slate Campus Tours | Jordan Mulkey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Technical case study of the Blaze Forward program scenarios interactive tool" />
+  <meta name="description" content="Technical case study of the Slate Campus Tours portal redesign" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,21 +141,21 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html#projects" class="text-accent text-decoration-none">Projects</a></li>
-          <li class="breadcrumb-item active text-light" aria-current="page">Blaze Forward Scenarios</li>
+          <li class="breadcrumb-item active text-light" aria-current="page">Campus Tours Portal</li>
         </ol>
       </nav>
       <div class="row align-items-center">
         <div class="col-lg-8">
           <p class="text-uppercase small fw-bold tracking-wider mb-2" style="color: var(--accent); letter-spacing: 0.1em;">Case Study</p>
-          <h1 class="display-5 fw-extrabold text-light mb-3">Building the Blaze Forward Dynamic Eligibility Matrix</h1>
+          <h1 class="display-5 fw-extrabold text-light mb-3">Slate Portal Optimization for Campus Tours</h1>
           <p class="lead text-muted">
-            Designing and coding an interactive student scenario portal that clarifies financial eligibility criteria, helping users understand 100% tuition-coverage pathways.
+            Optimizing the Dan Dipert University Welcome Center registration system by building interactive, conditional schedules, eliminating drop-off, and creating clear user-focused reservation flows.
           </p>
           <div class="d-flex flex-wrap gap-2 mt-3">
-            <span class="badge badge-skill">HTML5/CSS3</span>
-            <span class="badge badge-skill">Vanilla JS</span>
-            <span class="badge badge-skill">Bootstrap 5</span>
-            <span class="badge badge-skill">Data Visualizations</span>
+            <span class="badge badge-skill">Slate CRM Portal</span>
+            <span class="badge badge-skill">Conditional Logic</span>
+            <span class="badge badge-skill">Liquid Markup</span>
+            <span class="badge badge-skill">UI/UX Redesign</span>
           </div>
         </div>
         <div class="col-lg-4 mt-4 mt-lg-0">
@@ -163,14 +163,14 @@
             <h5 class="text-light fw-bold mb-3">Key Metrics</h5>
             <div class="row g-3">
               <div class="col-6">
-                <span class="d-block small text-muted">Page Performance</span>
-                <strong class="fs-4 accent-text">98/100</strong>
-                <span class="small d-block text-dark">Lighthouse Score</span>
+                <span class="d-block small text-muted">Support Contacts</span>
+                <strong class="fs-4 accent-text">-22%</strong>
+                <span class="small d-block text-dark">Fewer Booking Issues</span>
               </div>
               <div class="col-6">
-                <span class="d-block small text-muted">Clarity Index</span>
-                <strong class="fs-4 accent-text">+45%</strong>
-                <span class="small d-block text-dark">User Survey Gain</span>
+                <span class="d-block small text-muted">Booking Completion</span>
+                <strong class="fs-4 accent-text">+18%</strong>
+                <span class="small d-block text-dark">Year-over-Year Growth</span>
               </div>
             </div>
           </div>
@@ -189,32 +189,32 @@
           <section id="challenge" class="pt-0">
             <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">The Challenge</h2>
             <p class="text-muted">
-              The Blaze Forward Program covers 100% of tuition and mandatory fees for eligible undergraduates with family incomes up to $100,000. While the policy was highly beneficial, conveying complex eligibility rules (enrolled credit hours, TEXAS Grant status, deadlines, and SAI calculations) posed several hurdles:
+              Campus visits are an important step in converting prospective applicants into admitted Mavericks. However, booking a daily, graduate, group, or academic tour through the legacy portal presented several friction points:
             </p>
             <ul class="text-muted">
-              <li class="mb-2"><strong>Complex Policy Tables:</strong> Dense text tables outlining grant distributions and cost calculations were difficult for students to parse.</li>
-              <li class="mb-2"><strong>"Am I Eligible?" Anxiety:</strong> Students struggled to map their personal household financial situations onto complex compliance terminology.</li>
-              <li class="mb-2"><strong>Mobile Layout Breakdown:</strong> Detailed side-by-side financial aid comparison charts broke completely on smaller viewports.</li>
+              <li class="mb-2"><strong>Visual Complexity:</strong> The scheduling views displayed an overwhelming matrix of dates, times, and tour classifications simultaneously.</li>
+              <li class="mb-2"><strong>Static Layouts:</strong> Mobile users were forced to navigate cumbersome desktop-centric tables to secure a reservation.</li>
+              <li class="mb-2"><strong>Friction-Heavy Registrations:</strong> The lack of dynamic, conditional rules resulted in visitors attempting to register for dates and session times that were already filled or inapplicable to their academic standing.</li>
             </ul>
           </section>
 
           <!-- Section 2: Strategy -->
           <section id="approach">
-            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">The Solution: Interactive Scenarios</h2>
+            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">The UX Redesign Strategy</h2>
             <p class="text-muted">
-              We designed an interactive comparison tool based on clear student profiles (e.g., Alicia and Brian) to illustrate real financial outcomes. Features of this tool include:
+              The project involved a complete logical rebuild of the Slate CRM front-end presentation. We consolidated and sorted event data using structured, conditional tabs:
             </p>
             <div class="row g-4 my-2">
               <div class="col-md-6">
                 <div class="bg-panel p-3 h-100">
-                  <h6 class="text-light fw-bold mb-2">Scenario-Based Modeling</h6>
-                  <p class="small text-muted mb-0">Presenting concrete, realistic student profiles to show how Pell Grants, Texas Grants, and scholarships combine to cover tuition costs.</p>
+                  <h6 class="text-light fw-bold mb-2">Segmented Registration Tiers</h6>
+                  <p class="small text-muted mb-0">Constructed targeted workflows for Daily Tours, Graduate Visits, Specialized Academic Sessions, and Self-Guided options.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="bg-panel p-3 h-100">
-                  <h6 class="text-light fw-bold mb-2">Dynamic Data Layouts</h6>
-                  <p class="small text-muted mb-0">Re-flowing complex desktop comparison tables into simplified card elements for mobile devices.</p>
+                  <h6 class="text-light fw-bold mb-2">Automated Dynamic Availability</h6>
+                  <p class="small text-muted mb-0">Employed backend database mapping to hide fully booked sessions dynamically, preventing registration errors.</p>
                 </div>
               </div>
             </div>
@@ -224,23 +224,25 @@
           <section id="technical">
             <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">Technical Implementation</h2>
             <p class="text-muted">
-              The application utilizes a modular CSS grid and flexbox layout. To keep the interface lightweight and fast-loading, we used standard, optimized vanilla JavaScript to handle responsive layout adjustments:
+              Implementing this dynamic scheduling layout within Slate required a combination of template files, backend query manipulation, and Slate's Liquid markup language. 
+            </p>
+            <p class="text-muted">
+              We parsed tour registration availability in real time and displayed custom data blocks based on user-selected criteria:
             </p>
             <div class="mb-3">
-              <pre class="code-block"><code>// Client-Side Scenario Dynamic Calculations
-const scenarios = {
-  alicia: { income: 95000, creditHours: 12, eligible: true, tuition: 12208, totalAid: 12208 },
-  brian: { income: 45000, creditHours: 15, eligible: true, tuition: 12208, totalAid: 15300 }
-};
-
-function checkQualifying(income, hours) {
-  const isIncomeEligible = income <= 100000;
-  const isHoursEligible = hours >= 12;
-  return isIncomeEligible && isHoursEligible;
-}</code></pre>
+              <pre class="code-block"><code>{% if tour.available_slots > 0 %}
+  &lt;div class="tour-status open-spot"&gt;
+    &lt;span&gt;{{ tour.available_slots }} Seats Remaining&lt;/span&gt;
+    &lt;button class="btn-select" data-id="{{ tour.id }}"&gt;Register&lt;/button&gt;
+  &lt;/div&gt;
+{% else %}
+  &lt;div class="tour-status filled"&gt;
+    &lt;span class="text-muted"&gt;Waitlist Only&lt;/span&gt;
+  &lt;/div&gt;
+{% endif %}</code></pre>
             </div>
             <p class="text-muted">
-              We optimized loading times by writing lightweight CSS and structuring page resources efficiently, resulting in strong scores on web performance analysis tests.
+              Additionally, the client-side selection UI was optimized to dynamically adjust form fields (such as parking garage validation and physical accessibility accommodation inquiries) based on whether the registrant selected a standard walking tour or a large group session.
             </p>
           </section>
 
@@ -248,11 +250,11 @@ function checkQualifying(income, hours) {
           <section id="impact">
             <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">Impact & Outcome</h2>
             <p class="text-muted">
-              The comparison interface helped make financial aid options much clearer for prospective students and their families:
+              The updated platform provides a seamless booking experience for prospective students. Outcomes include:
             </p>
             <ul class="text-muted">
-              <li class="mb-2"><strong>Improved User Experience:</strong> Redesigned card layouts simplified the comparison of complex financial datasets across desktop and mobile screens.</li>
-              <li class="mb-2"><strong>Increased Trust:</strong> Visualizing real student scenarios helped future Mavericks quickly understand tuition-coverage opportunities.</li>
+              <li class="mb-2"><strong>Reduced Support Volume:</strong> A measurable reduction in email and telephone inquiries seeking assistance with tour registration issues.</li>
+              <li class="mb-2"><strong>Higher Engagement Rates:</strong> Streamlined mobile forms and clear parking guidance helped increase overall check-in rates at the Dan Dipert University Welcome Center.</li>
             </ul>
           </section>
 
@@ -264,24 +266,24 @@ function checkQualifying(income, hours) {
             <h4 class="h5 text-light fw-bold mb-3 pb-2 border-bottom border-secondary border-opacity-25">Project Details</h4>
             <ul class="list-unstyled mb-4 small text-muted">
               <li class="mb-3 d-flex justify-content-between">
-                <span>Client:</span>
-                <strong class="text-light">Financial Aid Office</strong>
+                <span>Platform:</span>
+                <strong class="text-light">Slate CRM</strong>
               </li>
               <li class="mb-3 d-flex justify-content-between">
                 <span>Role:</span>
-                <strong class="text-light">Front-End Developer</strong>
+                <strong class="text-light">UI/UX & Slate Specialist</strong>
               </li>
               <li class="mb-3 d-flex justify-content-between">
-                <span>Platform:</span>
-                <strong class="text-light">Sitecore & Custom HTML</strong>
+                <span>Target:</span>
+                <strong class="text-light">Undergrad & Grad Visitors</strong>
               </li>
               <li class="mb-3 d-flex justify-content-between">
-                <span>Accessibility:</span>
-                <strong class="text-light">WCAG 2.1 AA compliant</strong>
+                <span>Integrations:</span>
+                <strong class="text-light">Liquid Markup, JSON</strong>
               </li>
             </ul>
-            <a href="https://www.uta.edu/administration/fao/grants/bfp/scenarios" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info w-100 py-2 btn-sm fw-bold">
-              <i class="bi bi-box-arrow-up-right me-1"></i> Visit Live Scenarios Page
+            <a href="https://connect.uta.edu/portal/tours?tab=campus-tours" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info w-100 py-2 btn-sm fw-bold">
+              <i class="bi bi-box-arrow-up-right me-1"></i> Visit Campus Tours Portal
             </a>
           </div>
         </div>
@@ -306,4 +308,4 @@ function checkQualifying(income, hours) {
   </script>
 </body>
 </html>
-<!-- END OF FILE blaze-forward.html -->
+<!-- END OF FILE campus-tours.html -->
