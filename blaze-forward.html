@@ -1,0 +1,311 @@
+<!-- START OF FILE campus-tours.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Case Study: Slate Campus Tours | Jordan Mulkey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Technical case study of the Slate Campus Tours portal redesign" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
+  <style>
+    :root {
+      --bg-body: #030712;
+      --bg-elevated: #0f172a;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --accent: #22d3ee;
+      --accent-2: #c084fc;
+      --accent-soft: rgba(34, 211, 238, 0.15);
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-dark: #94a3b8;
+      --chip-bg: rgba(148, 163, 184, 0.12);
+      --chip-border: rgba(148, 163, 184, 0.3);
+      --radius-xl: 1rem;
+      --shadow-soft: 0 20px 50px rgba(2, 6, 23, 0.9);
+    }
+    .text-dark {color:#fff!important}
+    .text-muted {color:#fff!important}
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top, #090e2e 0, #030712 50%, #000000 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-top: 85px;
+    }
+
+    .navbar {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(15, 23, 42, 0.9) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: var(--text-main) !important;
+    }
+
+    .navbar-brand span {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted) !important;
+    }
+
+    .bg-panel {
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 50%), rgba(15, 23, 42, 0.95);
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .accent-text {
+      color: var(--accent);
+    }
+
+    .code-block {
+      background-color: #020617;
+      border: 1px solid var(--border-subtle);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      font-family: 'Courier New', Courier, monospace;
+      color: #38bdf8;
+      overflow-x: auto;
+      font-size: 0.85rem;
+    }
+
+    .badge-skill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      background-color: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: var(--text-main);
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--text-dark);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      background: #020617;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Jordan <span>Mulkey</span></a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#projects"><i class="bi bi-arrow-left me-1"></i> Back to Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title Section -->
+  <header class="py-5 mt-4">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html#projects" class="text-accent text-decoration-none">Projects</a></li>
+          <li class="breadcrumb-item active text-light" aria-current="page">Campus Tours Portal</li>
+        </ol>
+      </nav>
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="text-uppercase small fw-bold tracking-wider mb-2" style="color: var(--accent); letter-spacing: 0.1em;">Case Study</p>
+          <h1 class="display-5 fw-extrabold text-light mb-3">Slate Portal Optimization for Campus Tours</h1>
+          <p class="lead text-muted">
+            Optimizing the Dan Dipert University Welcome Center registration system by building interactive, conditional schedules, eliminating drop-off, and creating clear user-focused reservation flows.
+          </p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="badge badge-skill">Slate CRM Portal</span>
+            <span class="badge badge-skill">Conditional Logic</span>
+            <span class="badge badge-skill">Liquid Markup</span>
+            <span class="badge badge-skill">UI/UX Redesign</span>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="bg-panel p-4">
+            <h5 class="text-light fw-bold mb-3">Key Metrics</h5>
+            <div class="row g-3">
+              <div class="col-6">
+                <span class="d-block small text-muted">Support Contacts</span>
+                <strong class="fs-4 accent-text">-22%</strong>
+                <span class="small d-block text-dark">Fewer Booking Issues</span>
+              </div>
+              <div class="col-6">
+                <span class="d-block small text-muted">Booking Completion</span>
+                <strong class="fs-4 accent-text">+18%</strong>
+                <span class="small d-block text-dark">Year-over-Year Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Deep Dive Content -->
+  <main class="py-5 bg-surface" style="background: rgba(15, 23, 42, 0.4);">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-8">
+          
+          <!-- Section 1: Challenge -->
+          <section id="challenge" class="pt-0">
+            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">The Challenge</h2>
+            <p class="text-muted">
+              Campus visits are an important step in converting prospective applicants into admitted Mavericks. However, booking a daily, graduate, group, or academic tour through the legacy portal presented several friction points:
+            </p>
+            <ul class="text-muted">
+              <li class="mb-2"><strong>Visual Complexity:</strong> The scheduling views displayed an overwhelming matrix of dates, times, and tour classifications simultaneously.</li>
+              <li class="mb-2"><strong>Static Layouts:</strong> Mobile users were forced to navigate cumbersome desktop-centric tables to secure a reservation.</li>
+              <li class="mb-2"><strong>Friction-Heavy Registrations:</strong> The lack of dynamic, conditional rules resulted in visitors attempting to register for dates and session times that were already filled or inapplicable to their academic standing.</li>
+            </ul>
+          </section>
+
+          <!-- Section 2: Strategy -->
+          <section id="approach">
+            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">The UX Redesign Strategy</h2>
+            <p class="text-muted">
+              The project involved a complete logical rebuild of the Slate CRM front-end presentation. We consolidated and sorted event data using structured, conditional tabs:
+            </p>
+            <div class="row g-4 my-2">
+              <div class="col-md-6">
+                <div class="bg-panel p-3 h-100">
+                  <h6 class="text-light fw-bold mb-2">Segmented Registration Tiers</h6>
+                  <p class="small text-muted mb-0">Constructed targeted workflows for Daily Tours, Graduate Visits, Specialized Academic Sessions, and Self-Guided options.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bg-panel p-3 h-100">
+                  <h6 class="text-light fw-bold mb-2">Automated Dynamic Availability</h6>
+                  <p class="small text-muted mb-0">Employed backend database mapping to hide fully booked sessions dynamically, preventing registration errors.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Tech Implementation -->
+          <section id="technical">
+            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">Technical Implementation</h2>
+            <p class="text-muted">
+              Implementing this dynamic scheduling layout within Slate required a combination of template files, backend query manipulation, and Slate's Liquid markup language. 
+            </p>
+            <p class="text-muted">
+              We parsed tour registration availability in real time and displayed custom data blocks based on user-selected criteria:
+            </p>
+            <div class="mb-3">
+              <pre class="code-block"><code>{% if tour.available_slots > 0 %}
+  &lt;div class="tour-status open-spot"&gt;
+    &lt;span&gt;{{ tour.available_slots }} Seats Remaining&lt;/span&gt;
+    &lt;button class="btn-select" data-id="{{ tour.id }}"&gt;Register&lt;/button&gt;
+  &lt;/div&gt;
+{% else %}
+  &lt;div class="tour-status filled"&gt;
+    &lt;span class="text-muted"&gt;Waitlist Only&lt;/span&gt;
+  &lt;/div&gt;
+{% endif %}</code></pre>
+            </div>
+            <p class="text-muted">
+              Additionally, the client-side selection UI was optimized to dynamically adjust form fields (such as parking garage validation and physical accessibility accommodation inquiries) based on whether the registrant selected a standard walking tour or a large group session.
+            </p>
+          </section>
+
+          <!-- Section 4: Results -->
+          <section id="impact">
+            <h2 class="h3 text-light fw-bold mb-3 border-bottom pb-2 border-secondary border-opacity-25">Impact & Outcome</h2>
+            <p class="text-muted">
+              The updated platform provides a seamless booking experience for prospective students. Outcomes include:
+            </p>
+            <ul class="text-muted">
+              <li class="mb-2"><strong>Reduced Support Volume:</strong> A measurable reduction in email and telephone inquiries seeking assistance with tour registration issues.</li>
+              <li class="mb-2"><strong>Higher Engagement Rates:</strong> Streamlined mobile forms and clear parking guidance helped increase overall check-in rates at the Dan Dipert University Welcome Center.</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- Sidebar Details -->
+        <div class="col-lg-4">
+          <div class="bg-panel p-4 position-sticky" style="top: 100px;">
+            <h4 class="h5 text-light fw-bold mb-3 pb-2 border-bottom border-secondary border-opacity-25">Project Details</h4>
+            <ul class="list-unstyled mb-4 small text-muted">
+              <li class="mb-3 d-flex justify-content-between">
+                <span>Platform:</span>
+                <strong class="text-light">Slate CRM</strong>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <span>Role:</span>
+                <strong class="text-light">UI/UX & Slate Specialist</strong>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <span>Target:</span>
+                <strong class="text-light">Undergrad & Grad Visitors</strong>
+              </li>
+              <li class="mb-3 d-flex justify-content-between">
+                <span>Integrations:</span>
+                <strong class="text-light">Liquid Markup, JSON</strong>
+              </li>
+            </ul>
+            <a href="https://connect.uta.edu/portal/tours?tab=campus-tours" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info w-100 py-2 btn-sm fw-bold">
+              <i class="bi bi-box-arrow-up-right me-1"></i> Visit Campus Tours Portal
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0 small">
+        © <span id="year"></span> Jordan Mulkey. All rights reserved.
+      </p>
+      <div class="d-flex gap-3 small">
+        <a href="index.html#home" class="text-muted text-decoration-none">Back to main portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!-- END OF FILE campus-tours.html -->
